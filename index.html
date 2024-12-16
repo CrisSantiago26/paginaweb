@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="teshclass" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #db0e0e; 
+            color: white; /
+            padding: 18px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: white; /
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline; 
+        }
+    </style>
+
+
+    <header>
+        
+        <div class="container">
+            <p class="logo">Estructuras lineales</p>
+            <nav>
+                <a href="#Introduccion">Introduccion a la estructura de datos</a>
+                <a href="#Recursividad">Recursividad</a>
+                <a href="#Estructuras lineales">Estructuras lineales</a>
+                <a href="#Estructuras no lineales">Estructuras no lineales</a>
+                <a href="#Métodos de ordenamiento">Métodos de ordenamiento</a>
+                <a href="#Métodos de busqueda">Métodos de busqueda</a>
+                <a href="#material de apoyo">Material de apoyo</a>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="hero">
+        <h1>Apredende sobre<br> las Estructuras de Datos</h1>
+    </section>
+
+    <section id="Introduccion">
+        <div class="container">
+            <center><img src="uno.jpg" height="300" width="350"></center>
+            <div class="img-container"></div>
+            <center>
+                <h1>1. Introduccion a la estructura de datos</h1>
+            <h3>1.1 Clasificación</h3> 
+            </center>  
+            <p>Estructuras Primitivas: Son aquellas que no están compuestas por otras estructuras.<br>
+            -Enteros <br>-Booleanos <br> -Caracteres</p>
+            <p>Estructuras Compuestas: Son aquellas que se forman a partir de estructuras primitivas. <br>
+            -Arreglos <br>-Registros <br>-Listas</p>
+            <p>Estructuras Lineales: Los datos se organizan de manera secuencial. <br>
+            -Arreglos (arrays) <br>-Listas enlazadas</p>
+            <p>Estructuras No Lineales: Los datos no se organizan de manera secuencial. <br>
+            -Árboles <br>-Grafos</p>
+           <center> <h3>1.2 Manejo de memoria</h3></center>
+            <p>El manejo de memoria se encarga de cómo se utiliza la memoria de la computadora para almacenar datos y programas.</p>
+            <p>Memoria estatica: La memoria estática es como un espacio fijo y predefinido que se reserva para tus datos al momento de compilar tu programa. Es como un casillero en un almacén que siempre estará ahí, con su tamaño y ubicación ya determinados. <br>
+            <br>-Reserva en tiempo de compilación: La memoria se reserva antes de que el programa comience a ejecutarse. <br>
+            <br>-Tamaño fijo: La cantidad de memoria que se reserva es fija y no se puede cambiar durante la ejecución del programa. <br>
+            <br>-Ubicación fija: La memoria se asigna a una dirección de memoria específica. <br></p>
+            <p>Memoria dinámica:La memoria dinámica es como un espacio flexible que se reserva y libera a demanda durante la ejecución del programa. Es como un almacén donde puedes pedir casilleros adicionales según lo necesites, y devolverlos cuando ya no los uses. <br>
+            <br>-Reserva en tiempo de ejecución: La memoria se reserva durante la ejecución del programa, cuando se necesita. <br>
+            <br>-Tamaño variable: El tamaño de la memoria que se reserva se puede cambiar durante la ejecución del programa. <br>
+            <br>-Ubicación variable: La mee asigna a una dirección de memoria que puede cambiar durante la ejecución del programa. <br></p>
+            moria s
+            <center> <h3>1.2 Manejo de memoria</h3></center>
+            <p>El análisis de algoritmos en estructuras de datos es el proceso de evaluar la eficiencia de los algoritmos utilizados para manipular y acceder a la información almacenada en diferentes estructuras de datos. <br>
+            <br>-Optimizar el rendimiento: Un análisis adecuado nos permite identificar cuellos de botella y mejorar la eficiencia de los algoritmos. <br>
+            <br>-Predecir el comportamiento: Podemos estimar el tiempo y espacio que un algoritmo requerirá para ejecutarse en función del tamaño de la entrada. <br>
+            <br>-Comparar diferentes soluciones: Nos permite elegir el algoritmo más adecuado para una tarea específica. <br></p>
+            <img src=""></img>
+        </div>
+    </section>
+
+    <section id="Recursividad"> 
+        <div class="container">
+            <div class="carta">
+                <center><h1>2. Recursividad</h1></center>
+                <center><img src="dos.jpg" height="300" width="350"></center>
+               <center> <h3>2.1 Definición</h3></center>
+                <p>La recursividad es un concepto que se indica cuando un método se llama a si mismo. Cuando creamos un método recursivo debemos tener en cuenta que este tiene que terminar por lo que dentro del método debemos asegurarnos de que no se está llamando a si mismo todo el rato, Lo que quiere decir que el ciclo es finito. <br></p>
+                <h3>2.2 Procedimientos recursivos</h3>
+                <p>-Caso Base: Es la condición que detiene la recursión. Sin un caso base, la función seguiría llamándose indefinidamente, lo que podría llevar a un desbordamiento de pila. <br>
+                    <br>-Paso Recursivo: Es la parte de la función que se llama a sí misma con un argumento modificado, acercándose al caso base. <br></p>
+            </div>
+        </div>
+    </section>
+    <section id="Estructuras lineales">
+        <div class="container">
+            <div class="carta">
+                <center>
+                <h1>3. Estructuras lineales</h1>
+                <center><img src="tres.jpg" height="300" width="350"></center>
+                <h3>3.1 Pilas</h3>
+                </center>
+                <p>Pilas(Stacks): Como una pila de platos, los elementos se añaden y se eliminan únicamente por la parte superior (LIFO: Last In, First Out). <br>
+                <br>-Operaciones: push (añadir), pop (eliminar), top (obtener el elemento superior).</p>
+                <center><h3>3.2 Colas</h3></center>
+                <p>Colas (Queues): Como una cola en un supermercado, los elementos se añaden por la parte trasera y se eliminan por la parte delantera (FIFO: First In, First Out). <br>
+                <br>-Operaciones: enqueue (añadir), dequeue (eliminar), front (obtener el elemento delantero). <br></p>
+                <center><h3>3.3 Listas</h3></center>
+                <p>Listas: Son secuencias de elementos que se pueden acceder y modificar de forma secuencial. <br>
+                <br>-Operaciones: append (añadir al final), insert (insertar en una posición), remove (eliminar), index (obtener la posición de un elemento), sort (ordenar). <br></p>
+            </div>
+        </div>
+    </section>
+        
+    <section id="Estructuras no lineales">
+        <div class="container">
+            <div class="carta">
+                <center>
+                <h1>4. Estructuras no lineales</h1>
+                <center><img src="cuatro.jpg" height="300" width="350"></center>
+                <h3>4.1 Árboles</h3>
+                </center>
+                <p>Un árbol es una estructura de datos jerárquica donde cada nodo tiene un padre (excepto la raíz) y puede tener cero o más hijos. <br>
+                <br>Tipos: <br>
+                <br>-Árbol binario: Cada nodo tiene como máximo dos hijos (izquierdo y derecho). <br>
+                <br>-Árbol de búsqueda binaria: Un árbol binario donde los valores de los nodos del subárbol izquierdo son menores que el valor del nodo padre, y los valores de los nodos del subárbol derecho son mayores. <br></p>
+                <center><h3>4.2 Grafos</h3></center>
+                <p>Un grafo es una estructura de datos que consiste en un conjunto de nodos (vértices) conectados por aristas (arcos). <br>
+                <br>Características: <br>
+                <br>-Nodos: Los elementos del grafo. <br>
+                <br>-Aristas: Las conexiones entre los nodos. <br>
+                <br>-Dirigido: Las aristas tienen una dirección (de un nodo a otro). <br>
+                <br>-No dirigido: Las aristas no tienen dirección. <br></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Métodos de ordenamiento">
+        <div class="container">
+            <div class="carta">
+                <center><h1>5. Métodos de ordenamiento</h1></center>
+                <center><img src="cinco.jpg" height="300" width="350"></center>
+                <center><h3>5.1 Algoritmos de ordenamiento interno</h3></center>
+                <p>Los algoritmos de ordenamiento interno se utilizan cuando todos los datos que se desean ordenar caben en la memoria principal (RAM). <br>
+                <br> -Ordenamiento por burbuja (Bubble Sort): Compara elementos adyacentes y los intercambia si están en el orden incorrecto. <br>
+                <br>-Ordenamiento por selección (Selection Sort): Encuentra el elemento más pequeño y lo coloca al principio, repitiendo el proceso para el resto de la lista. <br>
+                <br>-Ordenamiento por inserción (Insertion Sort): Construye una lista ordenada de manera incremental, insertando cada nuevo elemento en su posición correcta. <br>
+                <br>-Quicksort: Un algoritmo eficiente que utiliza la técnica de dividir y conquistar para ordenar los elementos. <br>
+                <br>-Mergesort: Divide la lista en sublistas, las ordena y luego las combina. <br></p>
+               <center> <h3>5.2 Algoritmos de ordenamiento externo</h3></center>
+                <p>Los algoritmos de ordenamiento externo son necesarios cuando los datos a ordenar son demasiado grandes para caber en la memoria principal. <br>
+                <br>-Ordenamiento por mezcla externa (External Merge Sort): Divide los datos en partes que caben en la memoria, las ordena y luego las combina. <br>
+                <br>-Ordenamiento por distribución (Distribution Sort): Distribuye los datos en varios contenedores y luego los ordena individualmente antes de combinarlos. <br>
+                <br>-Algoritmos de ordenamiento por bloques: Procesan los datos en bloques que se pueden manejar en la memoria. <br></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Métodos de busqueda">
+        <div class="container">
+            <div class="carta">
+                <center>
+                <h1>6. Métodos de busqueda</h1>
+                <center><img src="seis.jpg" height="300" width="350"></center>
+                <h3>6.1 Búsqueda secuencial</h3>
+            </center>
+                <p>Este método recorre la lista de elementos uno por uno, comparando cada elemento con el valor que se busca. <br>
+                <br>Complejidad: <br>
+                <br>-Peor caso: O(n), donde 'n' es el número de elementos. <br>
+                <br>-Mejor caso: O(1), si el elemento se encuentra al principio. <br></p>
+                <center><h3>6.2 Búsqueda binaria</h3></center>
+                <p>Este método solo funciona con listas ordenadas. Divide la lista a la mitad en cada iteración, descartando la mitad que no contiene el elemento buscado. <br>
+                <br>Complejidad: 
+                <br>-O(log n), donde 'n' es el número de elementos. <br></p>
+                <center><h3>6.3 Búsqueda por funciones HASH</h3></center>
+                <P>Utiliza una función hash para convertir la clave del elemento buscado en un índice en una tabla hash. La tabla hash almacena los elementos en diferentes ubicaciones, lo que permite acceder a ellos de forma rápida. <br>
+                <br>Complejidad: <br>
+                <br>-Promedio: O(1). <br>
+                <br>-Peor caso: O(n), si hay muchas colisiones <br></P>
+            </div>
+        </div>
+    </section>
+
+    <section id="material de apoyo">
+        <h2>Material de apoyo</h2>
+        <form action="https://openwebinars.net/blog/que-son-las-estructuras-de-datos-y-por-que-son-tan-utiles/">
+            <button>+ Info</button>
+        </form>
+        
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; nuestro equipo2024</p>
+        </div>
+    </div>
+    </footer>
+    
+</body>
+</html>
